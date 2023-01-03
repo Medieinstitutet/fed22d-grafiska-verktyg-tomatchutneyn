@@ -16,4 +16,4 @@
 
 ## Underskrivet av
 
-@malinlena @Filippasoderlund
+@malinlena @Filippasoderlund @EZillman

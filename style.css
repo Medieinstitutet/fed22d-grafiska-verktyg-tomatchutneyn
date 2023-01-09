@@ -32,4 +32,8 @@ header {
   font-family: "Julee", cursive;
   display: flex;
   justify-content: space-evenly;
+}
+
+.startingPage {
+  font-family: "Girassol", cursive;
 }/*# sourceMappingURL=style.css.map */

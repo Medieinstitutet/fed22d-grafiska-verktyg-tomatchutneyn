@@ -1,1 +1,5 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9677077&assignment_repo_type=AssignmentRepo)
+Om designen.
+
+Vi har valt att göra en design som passar in i temat halloween. Vi hittade en insperationsbild med färgerna blå, orange och gul. Vi har även valt att använda insperationsbilden som bakgrund i desktopläget och använt dessa färger i resten av designen. 
+
+Vi har fokuserat på en enkel design som lyfter fram en halloweenkänsla. Vi har exempelvis valt en font till rubrikerna med en kuslig kännsla. 

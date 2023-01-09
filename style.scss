@@ -3,7 +3,6 @@ body {
     padding: 0;
     max-height: 100vw;
     width: 100vw;
-    font-family: 'Julee', cursive;
     background-color: #0D2233;
     color: #F7CB22;
 
@@ -26,12 +25,14 @@ body {
 }
 
 header {
+    font-family: 'Julee', cursive;
     text-align: center;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .menu {
+    font-family: 'Julee', cursive;
     display: flex;
     justify-content: space-evenly;
 }

@@ -1,3 +1,11 @@
 {
-    "editor.formatOnSave": true
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/",
+      "savePathReplacementPairs": null
+    }
+  ],
+  "editor.formatOnSave": true
 }

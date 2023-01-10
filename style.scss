@@ -104,6 +104,11 @@ header {
   button:hover {
     background-color: var(--darkOrange);
   }
+
+  .errorElement {
+    margin-left: 20px;
+    color: red;
+  }
 }
 
 .cookieBar {
@@ -148,4 +153,8 @@ header {
   height: 284px;
   border-radius: 20px;
   background-color: var(--darkblue);
+}
+
+.hidden {
+  display: none;
 }

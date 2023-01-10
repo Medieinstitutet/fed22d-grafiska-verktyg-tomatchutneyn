@@ -5,6 +5,7 @@ const aboutUs = document.querySelector('.aboutUs');
 const cookieBar = document.querySelector('.cookieBar');
 const inputField = document.createElement('input');
 const registerBtn = document.createElement('button');
+const errorElement = document.createElement('div');
 const cookieBtn = document.createElement('button');
 const overlayColor = document.createElement('div');
 const body = document.body;
@@ -25,6 +26,10 @@ startingPage.appendChild(inputField);
 registerBtn.innerHTML = 'Anmäl dig här!';
 startingPage.appendChild(registerBtn);
 
+errorElement.innerHTML = `ange giltig e-post`;
+errorElement.classList.add('errorElement', 'hidden');
+startingPage.appendChild(errorElement);
+
 cookieBar.innerHTML = '<p>Acceptera cookies</p>';
 cookieBtn.innerHTML = 'Godkänn';
 cookieBar.appendChild(cookieBtn);
@@ -34,8 +39,21 @@ cookieBtn.addEventListener('click', () => {
 });
 
 registerBtn.addEventListener('click', () => {
-  overlayColor.classList.add('overlayColor');
-  popup.classList.add('popup');
-  body.append(overlayColor);
-  overlayColor.append(popup);
+  if (isEmail(inputField.value)) {
+    overlayColor.classList.add('overlayColor');
+    popup.classList.add('popup');
+    body.append(overlayColor);
+    overlayColor.append(popup);
+    errorElement.classList.add('hidden');
+  } else {
+    errorElement.classList.remove('hidden');
+  }
 });
+
+function isEmail(maybeEmail) {
+  return String(maybeEmail)
+    .toLowerCase()
+    .match(
+      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+    );
+}

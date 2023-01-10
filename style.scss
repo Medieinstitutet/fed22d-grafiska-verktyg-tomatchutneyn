@@ -1,3 +1,5 @@
+@forward 'normalize';
+
 :root {
   --darkblue: #0d2233;
   --yellow: #f7cb22;
@@ -19,7 +21,6 @@ body {
     font-size: 48px;
     margin: 0;
     color: var(--yellow);
-    font-weight: normal;
   }
 
   h4 {
@@ -106,6 +107,7 @@ header {
   }
 
   .errorElement {
+    padding-top: 5px;
     margin-left: 20px;
     color: red;
   }

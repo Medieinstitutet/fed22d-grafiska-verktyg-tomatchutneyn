@@ -71,6 +71,20 @@ function isEmail(maybeEmail) {
     );
 };
 
+startingPageLink.addEventListener('click', () => {
+  prices.remove();
+  aboutUs.remove();
+  body.append(startingPage)
+});
+
+pricesLink.addEventListener('click', () => {
+  startingPage.remove();
+  aboutUs.remove();
+  body.append(prices)
+});
+
 aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
+  prices.remove();
+  body.append(aboutUs)
 });

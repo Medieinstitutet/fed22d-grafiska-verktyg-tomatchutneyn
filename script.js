@@ -11,6 +11,7 @@ const overlayColor = document.createElement('div');
 const body = document.body;
 const popup = document.createElement('div');
 const closePopup = document.createElement('button');
+const popupText = document.createElement('div');
 
 menu.innerHTML =
   '<h4><a href="#">Startsida</a></h4>' +
@@ -38,6 +39,10 @@ cookieBar.appendChild(cookieBtn);
 closePopup.innerHTML = '<h4>Stäng</h4>';
 closePopup.classList.add('closePopup');
 popup.append(closePopup);
+
+popupText.innerHTML = '<h4>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</h4>';
+popupText.classList.add('popupText');
+popup.append(popupText)
 
 cookieBtn.addEventListener('click', () => {
   cookieBar.remove();

@@ -39,6 +39,7 @@ body {
     border: none;
     font-family: 'Julee', cursive;
     font-size: 20px;
+    cursor: pointer;
   }
 
   button:hover {
@@ -158,4 +159,13 @@ header {
 
 .hidden {
   display: none;
+}
+
+.closePopup {
+  width: 61px;
+  height: 32px;
+  margin-top: 20px;
+  float: right;
+  margin-right: 20px;
+  border-radius: 20px;
 }

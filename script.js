@@ -37,7 +37,7 @@ errorElement.innerHTML = `ange giltig e-post`;
 errorElement.classList.add('errorElement', 'hidden');
 startingPage.appendChild(errorElement);
 
-cookieBar.innerHTML = '<p>Acceptera cookies</p>';
+cookieBar.innerHTML = '<div>Acceptera cookies</div>';
 cookieBtn.innerHTML = 'Godkänn';
 cookieBar.appendChild(cookieBtn);
 

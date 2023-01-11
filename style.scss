@@ -4,6 +4,8 @@
   --lightOrange: #e7731c;
   --darkOrange: #bd601a;
   --overlayColor: rgba(217, 217, 217, 0.7);
+  --fontFamilyJulee: 'Julee', cursive;
+  --fontFamilyGirassol: 'Girassol', cursive;
 }
 
 body {
@@ -14,6 +16,7 @@ body {
   background-color: var(--darkblue);
   color: var(--yellow);
   overflow-x: hidden;
+  font-family: var(--fontFamilyJulee);
 
   h1,
   h2,
@@ -29,6 +32,15 @@ body {
 
   h4 {
     font-size: 20px;
+  }
+
+  p {
+    font-family: var(--fontFamilyGirassol);
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 35px;
+    letter-spacing: 1px;
   }
 
   hr {
@@ -151,10 +163,10 @@ header {
 
 .popup {
   position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 30vh;
   z-index: 2;
   width: 335px;
@@ -182,10 +194,10 @@ header {
 
 .popupText {
   position: absolute;
-  left: 0; 
-  right: 0; 
-  margin-left: auto; 
-  margin-right: auto; 
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
   font-family: 'Girassol', cursive;
   top: 70px;
   line-height: 35px;

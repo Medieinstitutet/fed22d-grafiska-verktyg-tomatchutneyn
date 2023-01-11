@@ -12,11 +12,9 @@ const body = document.body;
 const popup = document.createElement('div');
 const closePopup = document.createElement('button');
 const popupText = document.createElement('div');
-
-menu.innerHTML =
-  '<h4><a href="#">Startsida</a></h4>' +
-  '<h4><a href="#">Fina priser</a></h4>' +
-  '<h4><a href="#">Om oss</a></h4>';
+const startingPageLink = document.querySelector('.startingPageLink');
+const pricesLink = document.querySelector('.pricesLink');
+const aboutUsLink = document.querySelector('.aboutUsLink');
 
 startingPage.innerHTML +=
   '<h4>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris! <br>' +
@@ -42,7 +40,7 @@ popup.append(closePopup);
 
 popupText.innerHTML = '<h4>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</h4>';
 popupText.classList.add('popupText');
-popup.append(popupText)
+popup.append(popupText);
 
 cookieBtn.addEventListener('click', () => {
   cookieBar.remove();
@@ -72,3 +70,7 @@ function isEmail(maybeEmail) {
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
 };
+
+aboutUsLink.addEventListener('click', () => {
+  startingPage.remove();
+});

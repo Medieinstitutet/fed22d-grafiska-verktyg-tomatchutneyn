@@ -10,6 +10,7 @@ const cookieBtn = document.createElement('button');
 const overlayColor = document.createElement('div');
 const body = document.body;
 const popup = document.createElement('div');
+const closePopup = document.createElement('button');
 
 menu.innerHTML =
   '<h4><a href="#">Startsida</a></h4>' +
@@ -34,6 +35,10 @@ cookieBar.innerHTML = '<p>Acceptera cookies</p>';
 cookieBtn.innerHTML = 'Godkänn';
 cookieBar.appendChild(cookieBtn);
 
+closePopup.innerHTML = '<h4>Stäng</h4>';
+closePopup.classList.add('closePopup');
+popup.append(closePopup);
+
 cookieBtn.addEventListener('click', () => {
   cookieBar.remove();
 });
@@ -50,10 +55,15 @@ registerBtn.addEventListener('click', () => {
   }
 });
 
+closePopup.addEventListener('click', () => {
+  overlayColor.remove();
+  popup.remove();
+});
+
 function isEmail(maybeEmail) {
   return String(maybeEmail)
     .toLowerCase()
     .match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
-}
+};

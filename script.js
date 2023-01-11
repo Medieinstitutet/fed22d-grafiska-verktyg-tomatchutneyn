@@ -24,7 +24,8 @@ startingPage.innerHTML +=
   'O s a senast 22 oktober via anmälan nedan.</h4><br>';
 
 aboutUs.innerHTML =
-  '<p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester. Varje år får deltagarna chansen att tävla om ett fint pris. Frågor? Kontakta oss på halloween@gmail.com</p>';
+  '<h2>Om oss</h2><p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>Varje år får deltagarna chansen att tävla om ett fint pris.</p>' +
+  '<p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>';
 
 inputField.placeholder = 'Mailadress här:';
 startingPage.appendChild(inputField);

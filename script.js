@@ -20,12 +20,15 @@ aboutUs.remove();
 prices.remove();
 
 startingPage.innerHTML +=
-  '<h4>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris! <br>' +
-  'O s a senast 22 oktober via anmälan nedan.</h4><br>';
+  '<p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris! <br>' +
+  'O s a senast 22 oktober via anmälan nedan.</p><br>';
 
-aboutUs.innerHTML =
-  '<h2>Om oss</h2><p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>Varje år får deltagarna chansen att tävla om ett fint pris.</p>' +
-  '<p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>';
+aboutUs.innerHTML = `<h2>Om oss</h2>
+<section class="about-us-text">
+  <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>
+      Varje år får deltagarna chansen att tävla om ett fint pris.</p>
+  <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
+</section>`;
 
 inputField.placeholder = 'Mailadress här:';
 startingPage.appendChild(inputField);
@@ -46,7 +49,7 @@ closePopup.classList.add('closePopup');
 popup.append(closePopup);
 
 popupText.innerHTML =
-  '<h4>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</h4>';
+  '<p>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</p>';
 popupText.classList.add('popupText');
 popup.append(popupText);
 

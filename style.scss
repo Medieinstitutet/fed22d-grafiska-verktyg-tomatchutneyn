@@ -176,18 +176,12 @@ header {
 }
 
 @media (min-width: 700px) {
-  .about-us-text {
+  .about-us-text, .information-text {
     padding: 30px;
     margin: auto;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 335px;
-  }
-
-  .aboutUs {
-    h2 {
-      margin-top: 50px;
-      margin-bottom: 60px;
-    }
+    font-family: var(--fontFamilyJulee);
   }
 }

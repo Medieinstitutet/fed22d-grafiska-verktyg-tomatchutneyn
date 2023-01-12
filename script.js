@@ -19,15 +19,21 @@ const aboutUsLink = document.querySelector('.aboutUsLink');
 aboutUs.remove();
 prices.remove();
 
-startingPage.innerHTML +=
-  '<p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris! <br>' +
-  'O s a senast 22 oktober via anmälan nedan.</p><br>';
+startingPage.innerHTML += 
+`<section class="information-text">
+  <h2>Information</h2>
+    <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
+        Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
+        <br>O s a senast 22 oktober via anmälan nedan.
+    </p>
+</section>`;
 
-aboutUs.innerHTML = `<h2>Om oss</h2>
-<section class="about-us-text">
-  <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>
+aboutUs.innerHTML = 
+`<section class="about-us-text">
+  <h2>Om oss</h2>
+    <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>
       Varje år får deltagarna chansen att tävla om ett fint pris.</p>
-  <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
+    <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;
 
 inputField.placeholder = 'Mailadress här:';

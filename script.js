@@ -17,6 +17,7 @@ const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
 const welcomeHeader = document.getElementById('welcomeHeader');
 const header = document.querySelector('.header')
+const mediaQuery = window.matchMedia('(min-width: 700px)');
 
 startingPage.innerHTML +=
   '<h4>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris! <br>' +
@@ -84,12 +85,18 @@ pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
   body.append(prices)
-  welcomeHeader.remove();
+  if(mediaQuery.matches) {
+    welcomeHeader.remove();
+  };
 });
 
 aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
   prices.remove();
   body.append(aboutUs)
-  welcomeHeader.remove();
+  if(mediaQuery.matches) {
+    welcomeHeader.remove();
+  };
 });
+
+

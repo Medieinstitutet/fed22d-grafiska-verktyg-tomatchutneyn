@@ -8,6 +8,10 @@
   --fontFamilyGirassol: 'Girassol', cursive;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,23 +28,19 @@ body {
   h4 {
     font-weight: normal;
     margin: 0;
+    letter-spacing: 1px;
   }
 
   h2 {
     text-align: center;
-    font-size: 48px;
-  }
-
-  h4 {
-    font-size: 20px;
+    font-size: 2.5rem;
   }
 
   p {
+    margin: 20px;
     font-family: var(--fontFamilyGirassol);
-    font-size: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
-    line-height: 35px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     letter-spacing: 1px;
   }
 
@@ -51,10 +51,12 @@ body {
   button {
     background-color: var(--lightOrange);
     margin-left: 15px;
+    border-radius: 10px;
+    padding: 8px 25px;
     color: white;
     border: none;
     font-family: 'Julee', cursive;
-    font-size: 20px;
+    font-size: 1rem;
     cursor: pointer;
   }
 
@@ -73,15 +75,8 @@ body {
   }
 }
 
-.pageContent {
-  display: block;
-  margin-top: 0;
-  height: 100vh;
-}
-
 header {
   font-family: 'Julee', cursive;
-  text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -92,64 +87,27 @@ header {
   justify-content: space-evenly;
 }
 
+//startpage content
 .startingPage {
   font-family: 'Girassol', cursive;
 
   h4 {
-    margin-left: 50px;
-    margin-right: 55px;
-    line-height: 35px;
-    letter-spacing: 1px;
+    margin: 20px;
   }
 
   input {
-    margin-left: 10px;
+    margin: 10px;
     text-align: center;
-    height: 36px;
-    width: 189;
-    border-radius: 15px;
+    padding: 6px 0;
+    border-radius: 10px;
     font-family: 'Julee', cursive;
     font-size: 20px;
-  }
-
-  button {
-    height: 36px;
-    width: 132px;
-    border-radius: 15px;
-  }
-
-  button:hover {
-    background-color: var(--darkOrange);
   }
 
   .errorElement {
     padding-top: 5px;
     margin-left: 20px;
     color: red;
-  }
-}
-
-.cookieBar {
-  position: absolute;
-  display: flex;
-  bottom: 0;
-  height: 50px;
-  min-width: 100vw;
-  border-top: 3px solid var(--yellow);
-
-  p {
-    flex: 1;
-    margin-left: 15px;
-    font-family: 'Julee', cursive;
-  }
-
-  button {
-    margin-top: 14px;
-    height: 24px;
-    width: 84px;
-    float: right;
-    margin-right: 15px;
-    border-radius: 15px;
   }
 }
 
@@ -170,7 +128,7 @@ header {
   margin-right: auto;
   margin-top: 30vh;
   z-index: 2;
-  width: 335px;
+  max-width: 335px;
   height: 284px;
   border: 1px solid var(--yellow);
   border-radius: 20px;
@@ -178,19 +136,13 @@ header {
   text-align: center;
 }
 
-.hidden {
-  display: none;
-}
-
 .closePopup {
   position: relative;
-  flex: 1;
-  width: 61px;
-  height: 32px;
   margin-top: 20px;
   float: right;
+  padding: 7px;
   margin-right: 20px;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
 .popupText {
@@ -203,4 +155,39 @@ header {
   top: 70px;
   line-height: 35px;
   letter-spacing: 1px;
+}
+
+//let me be your footer
+.cookieBar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+  bottom: 0;
+  background-color: var(--darkblue);
+  box-shadow: inset 0 7px 9px -7px #f7cb22;
+}
+
+//let us be last
+.hidden {
+  display: none;
+}
+
+@media (min-width: 700px) {
+  .about-us-text {
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 6px 1px #f7cb22;
+    max-width: 335px;
+  }
+
+  .aboutUs {
+    h2 {
+      margin-top: 50px;
+      margin-bottom: 60px;
+    }
+  }
 }

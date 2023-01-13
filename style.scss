@@ -44,10 +44,6 @@ body {
     letter-spacing: 1px;
   }
 
-  hr {
-    border-color: var(--yellow);
-  }
-
   button {
     background-color: var(--lightOrange);
     margin-left: 15px;
@@ -76,21 +72,23 @@ body {
 }
 
 header {
+  padding: 20px;
   font-family: 'Julee', cursive;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: var(--darkblue);
+  border-bottom: 1px solid var(--yellow);
 }
 
 .menu {
-  font-family: 'Julee', cursive;
   display: flex;
   justify-content: space-evenly;
+  //font-size: i design 32px men är en h4?;
+  background-color: var(--darkblue);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--yellow);
 }
 
 //startpage content
 .startingPage {
-  font-family: 'Girassol', cursive;
-
   h4 {
     margin: 20px;
   }
@@ -126,10 +124,10 @@ header {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30vh;
+  margin-top: 20vh;
   z-index: 2;
   max-width: 335px;
-  height: 284px;
+  height: 328px;
   border: 1px solid var(--yellow);
   border-radius: 20px;
   background-color: var(--darkblue);
@@ -152,7 +150,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Girassol', cursive;
-  top: 70px;
+  top: 90px;
   line-height: 35px;
   letter-spacing: 1px;
 }
@@ -176,12 +174,30 @@ header {
 }
 
 @media (min-width: 700px) {
-  .about-us-text, .information-text {
-    padding: 30px;
-    margin: auto;
+  .about-us-text,
+  .information-text {
+    padding: 15px;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 335px;
+    background-color: var(--darkblue);
     font-family: var(--fontFamilyJulee);
+  }
+
+  .aboutUs,
+  .startingPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  body {
+    background-image: url('assets/background-nedskalad.jpg');
+    background-repeat: no-repeat;
+    //background-size: cover;
   }
 }

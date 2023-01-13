@@ -19,8 +19,7 @@ const aboutUsLink = document.querySelector('.aboutUsLink');
 aboutUs.remove();
 prices.remove();
 
-startingPage.innerHTML += 
-`<section class="information-text">
+startingPage.innerHTML += `<section class="information-text">
   <h2>Information</h2>
     <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
@@ -28,8 +27,7 @@ startingPage.innerHTML +=
     </p>
 </section>`;
 
-aboutUs.innerHTML = 
-`<section class="about-us-text">
+aboutUs.innerHTML = `<section class="about-us-text">
   <h2>Om oss</h2>
     <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>
       Varje år får deltagarna chansen att tävla om ett fint pris.</p>

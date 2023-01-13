@@ -15,9 +15,7 @@ const popupText = document.createElement('div');
 const startingPageLink = document.querySelector('.startingPageLink');
 const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
-
-aboutUs.remove();
-prices.remove();
+const gallery = document.getElementsByClassName("gallery");
 
 startingPage.innerHTML += 
 `<section class="information-text">
@@ -88,6 +86,30 @@ function isEmail(maybeEmail) {
     );
 }
 
+//Prices
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function nextImage(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  let i;
+  
+  if (n > gallery.length) {
+    slideIndex = 1
+  }
+  if (n < 1) {
+    slideIndex = gallery.length
+  }
+  for (i = 0; i < gallery.length; i++) {
+    gallery[i].style.display = "none";
+  }
+
+  gallery[slideIndex-1].style.display = "block";
+}
+
 startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
@@ -105,3 +127,6 @@ aboutUsLink.addEventListener('click', () => {
   prices.remove();
   body.append(aboutUs);
 });
+
+aboutUs.remove();
+prices.remove();

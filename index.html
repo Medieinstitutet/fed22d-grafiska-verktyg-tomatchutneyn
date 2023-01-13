@@ -14,6 +14,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://kit.fontawesome.com/f27d901c01.js" crossorigin="anonymous"></script>
+
     <title>Document</title>
   </head>
   <body>
@@ -29,7 +31,21 @@
 
     <hr />
     <div class="startingPage"></div>
-    <div class="prices"></div>
+    <div class="prices">
+      <div class="gallery">
+        <div class="caption">Förra årets vinnare!</div>
+        <img src="assets/skelettgubbe-nedskalat.jpg" alt="Winning costume" class="image">
+      </div>
+    
+      <div class="gallery">
+        <div class="caption">Fina priser!</div>
+        <img src="assets/trophy-pumpkin-png.png" alt="Trophy" class="image">
+      </div>
+    
+      <a class="prev" onclick="nextImage(-1)"><i class="fa-solid fa-arrow-left fa-2x"></i></a>
+      <a class="next" onclick="nextImage(1)"><i class="fa-solid fa-arrow-right fa-2x"></i></a>
+      <br><br>
+    </div>
     <div class="aboutUs"></div>
     <div class="cookieBar"></div>
     <script src="script.js"></script>

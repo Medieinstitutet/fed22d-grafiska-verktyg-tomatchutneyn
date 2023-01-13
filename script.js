@@ -16,8 +16,6 @@ const startingPageLink = document.querySelector('.startingPageLink');
 const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
 const welcomeHeader = document.getElementById('welcomeHeader');
-const header = document.querySelector('.header')
-const mediaQuery = window.matchMedia('(min-width: 700px)');
 
 startingPage.innerHTML +=
   '<h4>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris! <br>' +
@@ -41,7 +39,8 @@ closePopup.innerHTML = '<h4>Stäng</h4>';
 closePopup.classList.add('closePopup');
 popup.append(closePopup);
 
-popupText.innerHTML = '<h4>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</h4>';
+popupText.innerHTML =
+  '<h4>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</h4>';
 popupText.classList.add('popupText');
 popup.append(popupText);
 
@@ -72,31 +71,28 @@ function isEmail(maybeEmail) {
     .match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
-};
+}
 
 startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
-  body.append(startingPage)
-  header.append(welcomeHeader);
+  body.append(startingPage);
+  welcomeHeader.className = '';
+  welcomeHeader.classList.add('welcomeStart');
 });
 
 pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
-  body.append(prices)
-  if(mediaQuery.matches) {
-    welcomeHeader.remove();
-  };
+  body.append(prices);
+  welcomeHeader.className = '';
+  welcomeHeader.classList.add('welcomePrice');
 });
 
 aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
   prices.remove();
-  body.append(aboutUs)
-  if(mediaQuery.matches) {
-    welcomeHeader.remove();
-  };
+  body.append(aboutUs);
+  welcomeHeader.className = '';
+  welcomeHeader.classList.add('welcomeAbout');
 });
-
-

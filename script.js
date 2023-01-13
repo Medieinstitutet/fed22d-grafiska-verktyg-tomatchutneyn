@@ -15,6 +15,8 @@ const popupText = document.createElement('div');
 const startingPageLink = document.querySelector('.startingPageLink');
 const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
+const desktopOnly = document.querySelector('.desktopOnly');
+const header = document.querySelector('header');
 
 aboutUs.remove();
 prices.remove();
@@ -92,16 +94,19 @@ startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
   body.append(startingPage);
+  header.append(desktopOnly);
 });
 
 pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
   body.append(prices);
+  desktopOnly.remove();
 });
 
 aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
   prices.remove();
   body.append(aboutUs);
+  desktopOnly.remove();
 });

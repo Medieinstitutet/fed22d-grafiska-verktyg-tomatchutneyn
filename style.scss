@@ -170,6 +170,10 @@ header {
   box-shadow: inset 0 7px 9px -7px #f7cb22;
 }
 
+.desktopOnly {
+  display: none;
+}
+
 //let us be last
 .hidden {
   display: none;
@@ -183,5 +187,15 @@ header {
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 335px;
     font-family: var(--fontFamilyJulee);
+  }
+}
+
+@media (min-width: 700px) {
+  .desktopOnly {
+    display: block;
+  }
+
+  .mobileTabletOnly {
+    display: none;
   }
 }

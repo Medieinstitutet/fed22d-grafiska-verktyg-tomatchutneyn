@@ -15,7 +15,8 @@ const popupText = document.createElement('div');
 const startingPageLink = document.querySelector('.startingPageLink');
 const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
-const gallery = document.getElementsByClassName("gallery");
+const gallery = document.getElementsByClassName('gallery');
+const tabletOnly = document.querySelector('.tabletOnly');
 
 startingPage.innerHTML += 
 `<section class="information-text">
@@ -114,12 +115,14 @@ startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
   body.append(startingPage);
+  body.append(tabletOnly);
 });
 
 pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
   body.append(prices);
+  body.append(tabletOnly);
 });
 
 aboutUsLink.addEventListener('click', () => {

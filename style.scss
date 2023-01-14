@@ -203,7 +203,7 @@ header {
 }
 
 //let us be last
-.hidden, .desktopOnly {
+.hidden, .tabletOnly, .desktopOnly {
   display: none;
 }
 
@@ -229,14 +229,18 @@ header {
   .image {
     width: 28vw;
   }
+
+  .startingPage, .prices {
+    display: none;
+  }
 }
 
 @media (min-width: 900px) {
-  .desktopOnly {
+  .desktopOnly, .startingPage, .prices {
     display: block;
   }
 
-  .mobileTablet {
+  .tabletOnly, .mobileTablet {
     display: none;
   }
 

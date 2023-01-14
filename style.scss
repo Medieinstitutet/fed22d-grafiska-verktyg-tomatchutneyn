@@ -202,12 +202,8 @@ header {
   box-shadow: inset 0 7px 9px -7px #f7cb22;
 }
 
-.showInDesktop {
-  display: none;
-}
-
 //let us be last
-.hidden {
+.hidden, .desktopOnly {
   display: none;
 }
 
@@ -236,11 +232,11 @@ header {
 }
 
 @media (min-width: 900px) {
-  .showInDesktop {
+  .desktopOnly {
     display: block;
   }
 
-  .hideInDesktop {
+  .mobileTablet {
     display: none;
   }
 

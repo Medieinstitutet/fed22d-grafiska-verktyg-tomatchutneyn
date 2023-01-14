@@ -157,7 +157,7 @@ header {
   letter-spacing: 1px;
 }
 
-.prices {
+.prices, .tabletGallery {
   position: relative;
   margin: auto;
 }
@@ -208,7 +208,7 @@ header {
 }
 
 @media (min-width: 700px) {
-  .about-us-text, .information-text {
+  .about-us-text {
     padding: 30px;
     margin: auto;
     border-radius: 10px;
@@ -217,7 +217,7 @@ header {
     font-family: var(--fontFamilyJulee);
   }
 
-  .prices {
+  .tabletGallery {
     margin: auto;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
@@ -226,16 +226,40 @@ header {
     padding-top: 30px;
   }
 
+  .information-text{
+    margin: auto;
+    max-width: 370px;
+  }
+
+  .tabletRegister {
+    margin: auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
   .image {
     width: 28vw;
   }
 
+  .tabletOnly {
+    display: block;
+  }
+  
   .startingPage, .prices {
     display: none;
   }
 }
 
 @media (min-width: 900px) {
+  .about-us-text, .information-text {
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 6px 1px #f7cb22;
+    max-width: 335px;
+    font-family: var(--fontFamilyJulee);
+  }
+  
   .desktopOnly, .startingPage, .prices {
     display: block;
   }

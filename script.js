@@ -16,11 +16,22 @@ const startingPageLink = document.querySelector('.startingPageLink');
 const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
 const gallery = document.getElementsByClassName('gallery');
+const tabletSlider = document.getElementsByClassName('tabletSlider');
 const tabletOnly = document.querySelector('.tabletOnly');
+const introText = document.querySelector('.introText');
+const tabletRegister = document.createElement('div');
 
 startingPage.innerHTML += 
 `<section class="information-text">
-  <h2>Information</h2>
+  <h2 class="desktopOnly">Information</h2>
+    <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
+        Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
+        <br>O s a senast 22 oktober via anmälan nedan.
+    </p>
+</section>`;
+
+introText.innerHTML += 
+`<section class="information-text">
     <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
         <br>O s a senast 22 oktober via anmälan nedan.
@@ -35,15 +46,21 @@ aboutUs.innerHTML =
     <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;
 
+tabletRegister.classList.add('tabletRegister')
+tabletOnly.append(tabletRegister);
+
 inputField.placeholder = 'Mailadress här:';
 startingPage.appendChild(inputField);
+tabletRegister.appendChild(inputField);
 
 registerBtn.innerHTML = 'Anmäl dig här!';
 startingPage.appendChild(registerBtn);
+tabletRegister.appendChild(registerBtn);
 
 errorElement.innerHTML = `ange giltig e-post`;
 errorElement.classList.add('errorElement', 'hidden');
 startingPage.appendChild(errorElement);
+tabletRegister.appendChild(errorElement);
 
 cookieBar.innerHTML = '<div>Acceptera cookies</div>';
 cookieBtn.innerHTML = 'Godkänn';
@@ -87,7 +104,7 @@ function isEmail(maybeEmail) {
     );
 }
 
-//Prices
+//Slider function in mobile and desktop
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -111,6 +128,30 @@ function showSlides(n) {
   gallery[slideIndex-1].style.display = "block";
 }
 
+//Slider function in tablet
+let slideIndexTablet = 1;
+showSlidesTablet(slideIndexTablet);
+
+function nextImageTablet(n) {
+  showSlidesTablet(slideIndexTablet += n);
+}
+
+function showSlidesTablet(n) {
+  let i;
+  
+  if (n > tabletSlider.length) {
+    slideIndexTablet = 1
+  }
+  if (n < 1) {
+    slideIndexTablet = tabletSlider.length
+  }
+  for (i = 0; i < tabletSlider.length; i++) {
+    tabletSlider[i].style.display = "none";
+  }
+
+  tabletSlider[slideIndexTablet-1].style.display = "block";
+}
+
 startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
@@ -127,6 +168,7 @@ pricesLink.addEventListener('click', () => {
 
 aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
+  tabletOnly.remove();
   prices.remove();
   body.append(aboutUs);
 });

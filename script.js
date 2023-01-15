@@ -4,8 +4,11 @@ const prices = document.querySelector('.prices');
 const aboutUs = document.querySelector('.aboutUs');
 const cookieBar = document.querySelector('.cookieBar');
 const inputField = document.createElement('input');
+const inputFieldTablet = document.createElement('input');
 const registerBtn = document.createElement('button');
+const registerBtnTablet = document.createElement('button');
 const errorElement = document.createElement('div');
+const errorElementTablet = document.createElement('div');
 const cookieBtn = document.createElement('button');
 const overlayColor = document.createElement('div');
 const body = document.body;
@@ -46,21 +49,25 @@ aboutUs.innerHTML =
     <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;
 
-tabletRegister.classList.add('tabletRegister')
+tabletRegister.classList.add('tabletRegister');
 tabletOnly.append(tabletRegister);
 
 inputField.placeholder = 'Mailadress här:';
 startingPage.appendChild(inputField);
-tabletRegister.appendChild(inputField);
+inputFieldTablet.placeholder = 'Mailadress här:';
+tabletRegister.appendChild(inputFieldTablet);
 
 registerBtn.innerHTML = 'Anmäl dig här!';
 startingPage.appendChild(registerBtn);
-tabletRegister.appendChild(registerBtn);
+registerBtnTablet.innerHTML = 'Anmäl dig här!';
+tabletRegister.appendChild(registerBtnTablet);
 
-errorElement.innerHTML = `ange giltig e-post`;
+errorElement.innerHTML = `Ange giltig e-post`;
 errorElement.classList.add('errorElement', 'hidden');
 startingPage.appendChild(errorElement);
-tabletRegister.appendChild(errorElement);
+errorElementTablet.innerHTML = `Ange giltig e-post`;
+errorElementTablet.classList.add('errorElement', 'hidden');
+tabletRegister.appendChild(errorElementTablet);
 
 cookieBar.innerHTML = '<div>Acceptera cookies</div>';
 cookieBtn.innerHTML = 'Godkänn';
@@ -86,8 +93,22 @@ registerBtn.addEventListener('click', () => {
     body.append(overlayColor);
     overlayColor.append(popup);
     errorElement.classList.add('hidden');
+    inputField.value = '';
   } else {
     errorElement.classList.remove('hidden');
+  }
+});
+
+registerBtnTablet.addEventListener('click', () => {
+  if (isEmail(inputFieldTablet.value)) {
+    overlayColor.classList.add('overlayColor');
+    popup.classList.add('popup');
+    body.append(overlayColor);
+    overlayColor.append(popup);
+    errorElementTablet.classList.add('hidden');
+    inputFieldTablet.value = '';
+  } else {
+    errorElementTablet.classList.remove('hidden');
   }
 });
 
@@ -102,7 +123,7 @@ function isEmail(maybeEmail) {
     .match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
-}
+};
 
 //Slider function in mobile and desktop
 let slideIndex = 1;
@@ -110,23 +131,25 @@ showSlides(slideIndex);
 
 function nextImage(n) {
   showSlides(slideIndex += n);
-}
+};
 
 function showSlides(n) {
   let i;
   
   if (n > gallery.length) {
-    slideIndex = 1
-  }
+    slideIndex = 1;
+  };
+
   if (n < 1) {
-    slideIndex = gallery.length
-  }
+    slideIndex = gallery.length;
+  };
+
   for (i = 0; i < gallery.length; i++) {
     gallery[i].style.display = "none";
-  }
+  };
 
   gallery[slideIndex-1].style.display = "block";
-}
+};
 
 //Slider function in tablet
 let slideIndexTablet = 1;
@@ -134,23 +157,25 @@ showSlidesTablet(slideIndexTablet);
 
 function nextImageTablet(n) {
   showSlidesTablet(slideIndexTablet += n);
-}
+};
 
 function showSlidesTablet(n) {
   let i;
   
   if (n > tabletSlider.length) {
-    slideIndexTablet = 1
-  }
+    slideIndexTablet = 1;
+  };
+
   if (n < 1) {
-    slideIndexTablet = tabletSlider.length
-  }
+    slideIndexTablet = tabletSlider.length;
+  };
+
   for (i = 0; i < tabletSlider.length; i++) {
     tabletSlider[i].style.display = "none";
-  }
+  };
 
   tabletSlider[slideIndexTablet-1].style.display = "block";
-}
+};
 
 startingPageLink.addEventListener('click', () => {
   prices.remove();

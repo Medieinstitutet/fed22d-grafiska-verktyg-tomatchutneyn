@@ -94,21 +94,21 @@ header {
   h4 {
     margin: 20px;
   }
+}
 
-  input {
-    margin: 10px;
-    text-align: center;
-    padding: 6px 0;
-    border-radius: 10px;
-    font-family: 'Julee', cursive;
-    font-size: 20px;
-  }
+input {
+  margin: 10px;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 10px;
+  font-family: 'Julee', cursive;
+  font-size: 20px;
+}
 
-  .errorElement {
-    padding-top: 5px;
-    margin-left: 20px;
-    color: red;
-  }
+.errorElement {
+  padding-top: 5px;
+  margin-left: 20px;
+  color: red;
 }
 
 .overlayColor {
@@ -179,10 +179,10 @@ header {
   padding: 16px;
   color: var(--lightOrange);
   font-weight: bold;
-}
 
-.prev:hover, .next:hover {
-  color: var(--darkOrange);
+  :hover {
+    color: var(--darkOrange);
+  }
 }
 
 .next {
@@ -266,6 +266,12 @@ header {
 
   .tabletOnly, .mobileTablet {
     display: none;
+  }
+
+  .startingPage{
+      margin: auto;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
   }
 
   .prices {

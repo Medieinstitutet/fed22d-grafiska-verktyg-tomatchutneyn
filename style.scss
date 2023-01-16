@@ -264,6 +264,11 @@ input {
     background-image: url('assets/background-nedskalad.jpg');
     background-repeat: no-repeat;
 
+    .welcomePrice,
+    .welcomeAbout {
+      display: none;
+    }
+
     .about-us-text,
     .information-text {
       padding: 30px;

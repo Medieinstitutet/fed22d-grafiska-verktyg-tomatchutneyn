@@ -219,6 +219,10 @@ input {
     font-family: var(--fontFamilyJulee);
   }
 
+  .aboutUs {
+    margin-top: 60px;
+  }
+
   .tabletGallery {
     margin: auto;
     border-radius: 10px;
@@ -277,6 +281,9 @@ input {
       flex-direction: column;
       align-items: center;
       gap: 1rem;
+    }
+
+    .startingPage {
       margin-top: 60px;
     }
 
@@ -301,6 +308,7 @@ input {
 
     .image {
       width: 17vw;
+      max-height: none;
     }
   }
 }

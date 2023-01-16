@@ -44,10 +44,6 @@ body {
     letter-spacing: 1px;
   }
 
-  hr {
-    border-color: var(--yellow);
-  }
-
   button {
     background-color: var(--lightOrange);
     margin-left: 15px;
@@ -76,21 +72,23 @@ body {
 }
 
 header {
+  padding: 20px;
   font-family: 'Julee', cursive;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: var(--darkblue);
+  border-bottom: 1px solid var(--yellow);
 }
 
 .menu {
-  font-family: 'Julee', cursive;
   display: flex;
   justify-content: space-evenly;
+  //font-size: i design 32px men är en h4?;
+  background-color: var(--darkblue);
+  padding: 20px 0;
+  border-bottom: 1px solid var(--yellow);
 }
 
 //startpage content
 .startingPage {
-  font-family: 'Girassol', cursive;
-
   h4 {
     margin: 20px;
   }
@@ -126,10 +124,10 @@ input {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 30vh;
+  margin-top: 20vh;
   z-index: 2;
   max-width: 335px;
-  height: 284px;
+  height: 328px;
   border: 1px solid var(--yellow);
   border-radius: 20px;
   background-color: var(--darkblue);
@@ -152,12 +150,13 @@ input {
   margin-left: auto;
   margin-right: auto;
   font-family: 'Girassol', cursive;
-  top: 70px;
+  top: 90px;
   line-height: 35px;
   letter-spacing: 1px;
 }
 
-.prices, .tabletGallery {
+.prices,
+.tabletGallery {
   position: relative;
   margin: auto;
 }
@@ -172,7 +171,8 @@ input {
   width: 60vw;
 }
 
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -203,7 +203,9 @@ input {
 }
 
 //let us be last
-.hidden, .tabletOnly, .desktopOnly {
+.hidden,
+.tabletOnly,
+.desktopOnly {
   display: none;
 }
 
@@ -217,16 +219,21 @@ input {
     font-family: var(--fontFamilyJulee);
   }
 
+  .aboutUs {
+    margin-top: 60px;
+  }
+
   .tabletGallery {
     margin: auto;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 400px;
+    max-height: 400px;
     font-family: var(--fontFamilyJulee);
     padding-top: 30px;
   }
 
-  .information-text{
+  .information-text {
     margin: auto;
     max-width: 370px;
   }
@@ -239,59 +246,74 @@ input {
 
   .image {
     width: 28vw;
+    max-height: 250px;
   }
 
   .tabletOnly {
     display: block;
   }
-  
-  .startingPage, .prices {
+
+  .startingPage,
+  .prices {
     display: none;
   }
 }
 
 @media (min-width: 900px) {
-  .about-us-text, .information-text {
-    padding: 30px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 6px 1px #f7cb22;
-    max-width: 335px;
-    font-family: var(--fontFamilyJulee);
-  }
+  body {
+    background-image: url('assets/background-nedskalad.jpg');
+    background-repeat: no-repeat;
 
-
-  @media (min-width: 900px) {
     .welcomePrice,
     .welcomeAbout {
       display: none;
     }
-  
-  .desktopOnly, .startingPage, .prices {
-    display: block;
-  }
 
-  .tabletOnly, .mobileTablet {
-    display: none;
-  }
-
-  .startingPage{
+    .about-us-text,
+    .information-text {
+      padding: 30px;
       margin: auto;
-      max-width: -moz-fit-content;
-      max-width: fit-content;
-  }
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 6px 1px #f7cb22;
+      max-width: 335px;
+      background-color: var(--darkblue);
+      font-family: var(--fontFamilyJulee);
+    }
 
-  .prices {
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 6px 1px #f7cb22;
-    max-width: 600px;
-    font-family: var(--fontFamilyJulee);
-    padding-top: 30px;
-  }
+    .aboutUs,
+    .startingPage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
 
-  .image {
-    width: 17vw;
+    .startingPage {
+      margin-top: 60px;
+    }
+
+    .desktopOnly,
+    .prices {
+      display: block;
+    }
+
+    .tabletOnly,
+    .mobileTablet {
+      display: none;
+    }
+
+    .prices {
+      margin: auto;
+      border-radius: 10px;
+      margin-top: 60px;
+      max-width: 600px;
+      padding-top: 30px;
+      box-shadow: inset 0px 0px 6px 1px #f7cb22;
+    }
+
+    .image {
+      width: 17vw;
+      max-height: none;
+    }
   }
-}
 }

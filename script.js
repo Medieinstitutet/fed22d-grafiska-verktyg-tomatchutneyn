@@ -25,8 +25,7 @@ const tabletOnly = document.querySelector('.tabletOnly');
 const introText = document.querySelector('.introText');
 const tabletRegister = document.createElement('div');
 
-startingPage.innerHTML += 
-`<section class="information-text">
+startingPage.innerHTML += `<section class="information-text">
   <h2 class="desktopOnly">Information</h2>
     <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
@@ -34,16 +33,14 @@ startingPage.innerHTML +=
     </p>
 </section>`;
 
-introText.innerHTML += 
-`<section class="information-text">
+introText.innerHTML += `<section class="information-text">
     <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
         <br>O s a senast 22 oktober via anmälan nedan.
     </p>
 </section>`;
 
-aboutUs.innerHTML = 
-`<section class="about-us-text">
+aboutUs.innerHTML = `<section class="about-us-text">
   <h2>Om oss</h2>
     <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>
       Varje år får deltagarna chansen att tävla om ett fint pris.</p>
@@ -124,59 +121,59 @@ function isEmail(maybeEmail) {
     .match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
-};
+}
 
 //Slider function in mobile and desktop
 let slideIndex = 1;
 showSlides(slideIndex);
 
 function nextImage(n) {
-  showSlides(slideIndex += n);
-};
+  showSlides((slideIndex += n));
+}
 
 function showSlides(n) {
   let i;
-  
+
   if (n > gallery.length) {
     slideIndex = 1;
-  };
+  }
 
   if (n < 1) {
     slideIndex = gallery.length;
-  };
+  }
 
   for (i = 0; i < gallery.length; i++) {
-    gallery[i].style.display = "none";
-  };
+    gallery[i].style.display = 'none';
+  }
 
-  gallery[slideIndex-1].style.display = "block";
-};
+  gallery[slideIndex - 1].style.display = 'block';
+}
 
 //Slider function in tablet
 let slideIndexTablet = 1;
 showSlidesTablet(slideIndexTablet);
 
 function nextImageTablet(n) {
-  showSlidesTablet(slideIndexTablet += n);
-};
+  showSlidesTablet((slideIndexTablet += n));
+}
 
 function showSlidesTablet(n) {
   let i;
-  
+
   if (n > tabletSlider.length) {
     slideIndexTablet = 1;
-  };
+  }
 
   if (n < 1) {
     slideIndexTablet = tabletSlider.length;
-  };
+  }
 
   for (i = 0; i < tabletSlider.length; i++) {
-    tabletSlider[i].style.display = "none";
-  };
+    tabletSlider[i].style.display = 'none';
+  }
 
-  tabletSlider[slideIndexTablet-1].style.display = "block";
-};
+  tabletSlider[slideIndexTablet - 1].style.display = 'block';
+}
 
 startingPageLink.addEventListener('click', () => {
   prices.remove();

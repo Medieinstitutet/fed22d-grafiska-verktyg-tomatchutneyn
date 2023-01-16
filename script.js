@@ -18,6 +18,7 @@ const popupText = document.createElement('div');
 const startingPageLink = document.querySelector('.startingPageLink');
 const pricesLink = document.querySelector('.pricesLink');
 const aboutUsLink = document.querySelector('.aboutUsLink');
+const welcomeHeader = document.getElementById('welcomeHeader');
 const gallery = document.getElementsByClassName('gallery');
 const tabletSlider = document.getElementsByClassName('tabletSlider');
 const tabletOnly = document.querySelector('.tabletOnly');
@@ -78,7 +79,7 @@ closePopup.classList.add('closePopup');
 popup.append(closePopup);
 
 popupText.innerHTML =
-  '<p>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</p>';
+ '<p>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</p>';
 popupText.classList.add('popupText');
 popup.append(popupText);
 
@@ -123,7 +124,7 @@ function isEmail(maybeEmail) {
     .match(
       /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     );
-};
+}
 
 //Slider function in mobile and desktop
 let slideIndex = 1;
@@ -181,6 +182,8 @@ startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
   body.append(startingPage);
+  welcomeHeader.className = '';
+  welcomeHeader.classList.add('welcomeStart');
   body.append(tabletOnly);
 });
 
@@ -188,7 +191,10 @@ pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
   body.append(prices);
+  welcomeHeader.className = '';
+  welcomeHeader.classList.add('welcomePrice');
   body.append(tabletOnly);
+
 });
 
 aboutUsLink.addEventListener('click', () => {
@@ -196,7 +202,10 @@ aboutUsLink.addEventListener('click', () => {
   tabletOnly.remove();
   prices.remove();
   body.append(aboutUs);
+  welcomeHeader.className = '';
+  welcomeHeader.classList.add('welcomeAbout');
 });
 
+});
 aboutUs.remove();
 prices.remove();

@@ -224,6 +224,7 @@ input {
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 400px;
+    max-height: 400px;
     font-family: var(--fontFamilyJulee);
     padding-top: 30px;
   }
@@ -241,6 +242,7 @@ input {
 
   .image {
     width: 28vw;
+    max-height: 250px;
   }
 
   .tabletOnly {
@@ -254,35 +256,31 @@ input {
 }
 
 @media (min-width: 900px) {
-  .about-us-text,
-  .information-text {
-    padding: 30px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: inset 0px 0px 6px 1px #f7cb22;
-    max-width: 335px;
-    background-color: var(--darkblue);
-    font-family: var(--fontFamilyJulee);
-  }
-
-  .aboutUs,
-  .startingPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-    margin-top: 60px;
-  }
-}
-
-@media (min-width: 900px) {
   body {
     background-image: url('assets/background-nedskalad.jpg');
     background-repeat: no-repeat;
-    //background-size: cover;
+
+    .about-us-text,
+    .information-text {
+      padding: 30px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: inset 0px 0px 6px 1px #f7cb22;
+      max-width: 335px;
+      background-color: var(--darkblue);
+      font-family: var(--fontFamilyJulee);
+    }
+
+    .aboutUs,
+    .startingPage {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      margin-top: 60px;
+    }
 
     .desktopOnly,
-    .startingPage,
     .prices {
       display: block;
     }
@@ -292,19 +290,13 @@ input {
       display: none;
     }
 
-    .startingPage {
-      margin: auto;
-      max-width: -moz-fit-content;
-      max-width: fit-content;
-    }
-
     .prices {
       margin: auto;
       border-radius: 10px;
-      box-shadow: inset 0px 0px 6px 1px #f7cb22;
+      margin-top: 60px;
       max-width: 600px;
-      font-family: var(--fontFamilyJulee);
       padding-top: 30px;
+      box-shadow: inset 0px 0px 6px 1px #f7cb22;
     }
 
     .image {

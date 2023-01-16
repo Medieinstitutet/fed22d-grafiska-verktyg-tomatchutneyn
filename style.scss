@@ -157,13 +157,6 @@ input {
   letter-spacing: 1px;
 }
 
-
-@media (min-width: 900px) {
-  .welcomePrice,
-  .welcomeAbout {
-    display: none;
-  }
-
 .prices, .tabletGallery {
   position: relative;
   margin: auto;

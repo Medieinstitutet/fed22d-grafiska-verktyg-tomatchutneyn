@@ -94,21 +94,21 @@ header {
   h4 {
     margin: 20px;
   }
+}
 
-  input {
-    margin: 10px;
-    text-align: center;
-    padding: 6px 0;
-    border-radius: 10px;
-    font-family: 'Julee', cursive;
-    font-size: 20px;
-  }
+input {
+  margin: 10px;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 10px;
+  font-family: 'Julee', cursive;
+  font-size: 20px;
+}
 
-  .errorElement {
-    padding-top: 5px;
-    margin-left: 20px;
-    color: red;
-  }
+.errorElement {
+  padding-top: 5px;
+  margin-left: 20px;
+  color: red;
 }
 
 .overlayColor {
@@ -157,6 +157,38 @@ header {
   letter-spacing: 1px;
 }
 
+.prices, .tabletGallery {
+  position: relative;
+  margin: auto;
+}
+
+.caption {
+  margin-bottom: 20px;
+}
+
+.image {
+  display: block;
+  margin: auto;
+  width: 60vw;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  padding: 16px;
+  color: var(--lightOrange);
+  font-weight: bold;
+
+  :hover {
+    color: var(--darkOrange);
+  }
+}
+
+.next {
+  right: 0;
+}
+
 //let me be your footer
 .cookieBar {
   position: absolute;
@@ -171,11 +203,54 @@ header {
 }
 
 //let us be last
-.hidden {
+.hidden, .tabletOnly, .desktopOnly {
   display: none;
 }
 
 @media (min-width: 700px) {
+  .about-us-text {
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 6px 1px #f7cb22;
+    max-width: 335px;
+    font-family: var(--fontFamilyJulee);
+  }
+
+  .tabletGallery {
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 6px 1px #f7cb22;
+    max-width: 400px;
+    font-family: var(--fontFamilyJulee);
+    padding-top: 30px;
+  }
+
+  .information-text{
+    margin: auto;
+    max-width: 370px;
+  }
+
+  .tabletRegister {
+    margin: auto;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+
+  .image {
+    width: 28vw;
+  }
+
+  .tabletOnly {
+    display: block;
+  }
+  
+  .startingPage, .prices {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
   .about-us-text, .information-text {
     padding: 30px;
     margin: auto;
@@ -183,5 +258,32 @@ header {
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 335px;
     font-family: var(--fontFamilyJulee);
+  }
+  
+  .desktopOnly, .startingPage, .prices {
+    display: block;
+  }
+
+  .tabletOnly, .mobileTablet {
+    display: none;
+  }
+
+  .startingPage{
+      margin: auto;
+      max-width: -moz-fit-content;
+      max-width: fit-content;
+  }
+
+  .prices {
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 6px 1px #f7cb22;
+    max-width: 600px;
+    font-family: var(--fontFamilyJulee);
+    padding-top: 30px;
+  }
+
+  .image {
+    width: 17vw;
   }
 }

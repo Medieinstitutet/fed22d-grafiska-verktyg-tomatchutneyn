@@ -259,6 +259,13 @@ input {
     max-width: 335px;
     font-family: var(--fontFamilyJulee);
   }
+
+
+  @media (min-width: 900px) {
+    .welcomePrice,
+    .welcomeAbout {
+      display: none;
+    }
   
   .desktopOnly, .startingPage, .prices {
     display: block;
@@ -286,4 +293,5 @@ input {
   .image {
     width: 17vw;
   }
+}
 }

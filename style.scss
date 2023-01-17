@@ -169,6 +169,11 @@ input {
   letter-spacing: 1px;
 }
 
+.container {
+  position: relative;
+  margin: auto;
+}
+
 .caption {
   margin-bottom: 20px;
 }
@@ -255,13 +260,14 @@ input {
   }
 
   .tabletGallery {
+    position: relative;
     margin: auto;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 400px;
-    max-height: 400px;
     font-family: var(--fontFamilyJulee);
     padding-top: 30px;
+    padding-bottom: 50px;
   }
 
   .information-text {
@@ -277,7 +283,6 @@ input {
 
   .image {
     width: 28vw;
-    max-height: 250px;
   }
 
   .tabletOnly,
@@ -318,6 +323,7 @@ input {
     #info-container {
       display: flex;
     }
+
     #pumpkin-desktop {
       width: 50px;
       height: 100%;
@@ -356,8 +362,7 @@ input {
       display: none;
     }
 
-    .gallery {
-      position: relative;
+    .container {
       margin: auto;
       padding-bottom: 100px;
       border-radius: 10px;

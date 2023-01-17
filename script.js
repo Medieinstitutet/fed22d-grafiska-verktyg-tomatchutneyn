@@ -26,7 +26,10 @@ const introText = document.querySelector('.introText');
 const tabletRegister = document.createElement('div');
 
 startingPage.innerHTML += `<section class="information-text">
-  <h2 class="desktopOnly">Information</h2>
+<div id="info-container">  
+<h2 class="desktopOnly">Information</h2>
+    <img src="/assets/Pumpkin-Clipart-Transparent-PNG.png" class="desktopOnly" id ="pumpkin-desktop" alt="Spinning Pumpkin">
+</div>    
     <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
         <br>O s a senast 22 oktober via anmälan nedan.

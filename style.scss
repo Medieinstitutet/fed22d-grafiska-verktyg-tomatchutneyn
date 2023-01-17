@@ -219,6 +219,27 @@ input {
     font-family: var(--fontFamilyJulee);
   }
 
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+
+  #pumpkin-tablet {
+    width: 50px;
+    height: 100%;
+    margin-left: 5px;
+    animation: rotation 2s ease-in-out;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
   .aboutUs {
     margin-top: 60px;
   }
@@ -278,6 +299,27 @@ input {
       max-width: 335px;
       background-color: var(--darkblue);
       font-family: var(--fontFamilyJulee);
+      display: flex;
+      flex-direction: column;
+    }
+
+    #info-container {
+      display: flex;
+    }
+    #pumpkin-desktop {
+      width: 50px;
+      height: 100%;
+      margin-left: 5px;
+      animation: rotation 2s ease-in-out;
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
     }
 
     .aboutUs,

@@ -71,7 +71,21 @@ body {
   }
 }
 
+.pageContent {
+  position: relative;
+  min-height: 100vh;
+}
+
+.startingPage,
+.tabletOnly,
+.prices,
+.aboutUs {
+  position: relative;
+  padding-bottom: 100px;
+}
+
 header {
+  justify-content: center;
   padding: 20px;
   font-family: 'Julee', cursive;
   background-color: var(--darkblue);
@@ -155,12 +169,6 @@ input {
   letter-spacing: 1px;
 }
 
-.prices,
-.tabletGallery {
-  position: relative;
-  margin: auto;
-}
-
 .caption {
   margin-bottom: 20px;
 }
@@ -205,6 +213,7 @@ input {
 //let us be last
 .hidden,
 .tabletOnly,
+.showInTablet,
 .desktopOnly {
   display: none;
 }
@@ -221,7 +230,8 @@ input {
 
   .header{
     display: flex;
-    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   #pumpkin-tablet {
@@ -270,7 +280,8 @@ input {
     max-height: 250px;
   }
 
-  .tabletOnly {
+  .tabletOnly,
+  .showInTablet {
     display: block;
   }
 
@@ -286,7 +297,8 @@ input {
     background-repeat: no-repeat;
 
     .welcomePrice,
-    .welcomeAbout {
+    .welcomeAbout,
+    .showInTablet {
       display: none;
     }
 
@@ -344,13 +356,16 @@ input {
       display: none;
     }
 
-    .prices {
+    .gallery {
+      position: relative;
       margin: auto;
+      padding-bottom: 100px;
       border-radius: 10px;
       margin-top: 60px;
       max-width: 600px;
       padding-top: 30px;
       box-shadow: inset 0px 0px 6px 1px #f7cb22;
+      background-color: var(--darkblue);
     }
 
     .image {

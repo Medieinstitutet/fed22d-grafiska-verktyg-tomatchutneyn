@@ -25,22 +25,52 @@
     <title>Document</title>
   </head>
   <body>
-    <header class="header">
-      <h2 id="welcomeHeader">Välkommen på Halloweenfest!</h2>
-      <img src="./assets/Pumpkin-Clipart-Transparent-PNG.png" class="tabletOnly" id="pumpkin-tablet" alt="Spinning Pumpkin">
-    </header>
+    <div class="pageContent">
+      <header class="header">
+        <div><h2 id="welcomeHeader">Välkommen på Halloweenfest!</h2></div>
+        <div><img src="./assets/Pumpkin-Clipart-Transparent-PNG.png" class="image showInTablet" id="pumpkin-tablet" alt="Spinning Pumpkin"></div>
+      </header>
 
-    <div class="menu">
-      <h4><a href="#" class="startingPageLink">Startsida</a></h4>
-      <h4><a href="#" class="pricesLink">Fina priser</a></h4>
-      <h4><a href="#" class="aboutUsLink">Om oss</a></h4>
-    </div>
+      <div class="menu">
+        <h4><a href="#" class="startingPageLink">Startsida</a></h4>
+        <h4><a href="#" class="pricesLink">Fina priser</a></h4>
+        <h4><a href="#" class="aboutUsLink">Om oss</a></h4>
+      </div>
 
-    <div class="startingPage"></div>
-    <div class="tabletOnly">
-      <div class="introText"></div>
-      <div class="tabletGallery">
-        <div class="tabletSlider">
+      <div class="startingPage"></div>
+      <div class="tabletOnly">
+        <div class="introText"></div>
+        <div class="tabletGallery">
+          <div class="tabletSlider">
+            <div class="caption"><h2>Förra årets vinnare!</h2></div>
+            <img
+              src="assets/skelettgubbe-nedskalat.jpg"
+              alt="Winning costume"
+              class="image"
+            />
+          </div>
+
+          <div class="tabletSlider">
+            <div class="caption"><h2>Fina priser!</h2></div>
+            <img
+              src="assets/trophy-png-23.png"
+              alt="Trophy"
+              class="image mobileTablet"
+            />
+          </div>
+
+          <a href="#" class="prev" onclick="nextImageTablet(-1)"
+            ><i class="fa-solid fa-arrow-left fa-2x"></i
+          ></a>
+          <a href="#" class="next" onclick="nextImageTablet(1)"
+            ><i class="fa-solid fa-arrow-right fa-2x"></i
+          ></a>
+          <br /><br />
+        </div>
+        <br /><br />
+      </div>
+      <div class="prices">
+        <div class="gallery">
           <div class="caption"><h2>Förra årets vinnare!</h2></div>
           <img
             src="assets/skelettgubbe-nedskalat.jpg"
@@ -49,59 +79,31 @@
           />
         </div>
 
-        <div class="tabletSlider">
+        <div class="gallery">
           <div class="caption"><h2>Fina priser!</h2></div>
           <img
             src="assets/trophy-png-23.png"
             alt="Trophy"
             class="image mobileTablet"
           />
+          <img
+            src="assets/trophy-pumpkin-png.png"
+            alt="Trophy"
+            class="image desktopOnly"
+          />
         </div>
 
-        <a href="#" class="prev" onclick="nextImageTablet(-1)"
+        <a class="prev" onclick="nextImage(-1)"
           ><i class="fa-solid fa-arrow-left fa-2x"></i
         ></a>
-        <a href="#" class="next" onclick="nextImageTablet(1)"
+        <a class="next" onclick="nextImage(1)"
           ><i class="fa-solid fa-arrow-right fa-2x"></i
         ></a>
         <br /><br />
       </div>
-      <br /><br />
+      <div class="aboutUs"></div>
+      <div class="cookieBar"></div>
     </div>
-    <div class="prices">
-      <div class="gallery">
-        <div class="caption"><h2>Förra årets vinnare!</h2></div>
-        <img
-          src="assets/skelettgubbe-nedskalat.jpg"
-          alt="Winning costume"
-          class="image"
-        />
-      </div>
-
-      <div class="gallery">
-        <div class="caption"><h2>Fina priser!</h2></div>
-        <img
-          src="assets/trophy-png-23.png"
-          alt="Trophy"
-          class="image mobileTablet"
-        />
-        <img
-          src="assets/trophy-pumpkin-png.png"
-          alt="Trophy"
-          class="image desktopOnly"
-        />
-      </div>
-
-      <a class="prev" onclick="nextImage(-1)"
-        ><i class="fa-solid fa-arrow-left fa-2x"></i
-      ></a>
-      <a class="next" onclick="nextImage(1)"
-        ><i class="fa-solid fa-arrow-right fa-2x"></i
-      ></a>
-      <br /><br />
-    </div>
-    <div class="aboutUs"></div>
-    <div class="cookieBar"></div>
     <script src="script.js"></script>
   </body>
 </html>

@@ -11,7 +11,6 @@ const errorElement = document.createElement('div');
 const errorElementTablet = document.createElement('div');
 const cookieBtn = document.createElement('button');
 const overlayColor = document.createElement('div');
-const body = document.body;
 const popup = document.createElement('div');
 const closePopup = document.createElement('button');
 const popupText = document.createElement('div');
@@ -24,6 +23,7 @@ const tabletSlider = document.getElementsByClassName('tabletSlider');
 const tabletOnly = document.querySelector('.tabletOnly');
 const introText = document.querySelector('.introText');
 const tabletRegister = document.createElement('div');
+const pageContent = document.querySelector('.pageContent')
 
 startingPage.innerHTML += `<section class="information-text">
 <div id="info-container">  
@@ -91,7 +91,7 @@ registerBtn.addEventListener('click', () => {
   if (isEmail(inputField.value)) {
     overlayColor.classList.add('overlayColor');
     popup.classList.add('popup');
-    body.append(overlayColor);
+    pageContent.append(overlayColor);
     overlayColor.append(popup);
     errorElement.classList.add('hidden');
     inputField.value = '';
@@ -104,7 +104,7 @@ registerBtnTablet.addEventListener('click', () => {
   if (isEmail(inputFieldTablet.value)) {
     overlayColor.classList.add('overlayColor');
     popup.classList.add('popup');
-    body.append(overlayColor);
+    pageContent.append(overlayColor);
     overlayColor.append(popup);
     errorElementTablet.classList.add('hidden');
     inputFieldTablet.value = '';
@@ -181,26 +181,26 @@ function showSlidesTablet(n) {
 startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
-  body.append(startingPage);
+  pageContent.append(startingPage);
   welcomeHeader.className = '';
   welcomeHeader.classList.add('welcomeStart');
-  body.append(tabletOnly);
+  pageContent.append(tabletOnly);
 });
 
 pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
-  body.append(prices);
+  pageContent.append(prices);
   welcomeHeader.className = '';
   welcomeHeader.classList.add('welcomePrice');
-  body.append(tabletOnly);
+  pageContent.append(tabletOnly);
 });
 
 aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
   tabletOnly.remove();
   prices.remove();
-  body.append(aboutUs);
+  pageContent.append(aboutUs);
   welcomeHeader.className = '';
   welcomeHeader.classList.add('welcomeAbout');
 });

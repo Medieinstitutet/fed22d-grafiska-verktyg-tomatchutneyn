@@ -84,7 +84,7 @@ closePopup.classList.add('closePopup');
 popup.append(closePopup);
 
 popupText.innerHTML =
-  '<p>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</p>';
+  '<p>Du är nu anmäld till <br class="mobileOnly">halloweenfesten.<br>Vi ser fram emot att se <br class="mobileOnly">din utklädnad!</p>';
 popupText.classList.add('popupText');
 popup.append(popupText);
 

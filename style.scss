@@ -137,10 +137,10 @@ input {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20vh;
+  margin-top: 28vh;
   z-index: 2;
   max-width: 335px;
-  height: 328px;
+  height: 300px;
   border: 1px solid var(--yellow);
   border-radius: 20px;
   background-color: var(--darkblue);
@@ -160,7 +160,7 @@ input {
   position: absolute;
   left: 0;
   right: 0;
-  top: 90px;
+  top: 70px;
   margin-left: auto;
   margin-right: auto;
   font-family: var(--fontFamilyGirassol);
@@ -309,6 +309,16 @@ input {
     width: 28vw;
   }
 
+  .popup {
+  margin-top: 35vh;
+  max-width: 610px;
+  height: 480px;
+  }
+
+  .popupText {
+  top: 185px;
+  }
+
   .tabletOnly,
   .showInTablet {
     display: block;
@@ -417,6 +427,17 @@ input {
 
     .startingPage {
       margin-top: 60px;
+    }
+
+    .popup {
+      position: fixed;
+      top: -10%;
+      max-width: 466;
+      height: 500px;
+      }
+    
+    .popupText {
+      top: 185px;
     }
 
     .desktopOnly,

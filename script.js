@@ -52,8 +52,8 @@ aboutUs.innerHTML = `<section class="about-us-text">
     <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;
 
-aboutUsTitle.innerHTML = '<h2 class="showInTablet">Om oss</h2>'
-aboutUsTitle.classList.add('aboutUsTitle')
+aboutUsTitle.innerHTML = '<h2 class="showInTablet">Om oss</h2>';
+aboutUsTitle.classList.add('aboutUsTitle');
 
 tabletRegister.classList.add('tabletRegister');
 tabletOnly.append(tabletRegister);
@@ -79,12 +79,12 @@ cookieBar.innerHTML = '<div>Acceptera cookies</div>';
 cookieBtn.innerHTML = 'Godkänn';
 cookieBar.appendChild(cookieBtn);
 
-closePopup.innerHTML = '<p>Stäng</p>';
+closePopup.innerHTML = '<p class="close-popup-text">Stäng</p>';
 closePopup.classList.add('closePopup');
 popup.append(closePopup);
 
 popupText.innerHTML =
-'<p>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</p>';
+  '<p>Du är nu anmäld till<br>halloweenfesten.<br>Vi ser fram emot att se<br>din utklädnad!</p>';
 popupText.classList.add('popupText');
 popup.append(popupText);
 

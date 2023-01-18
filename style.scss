@@ -246,6 +246,12 @@ input {
     font-family: var(--fontFamilyJulee);
   }
 
+  .aboutUsTitle {
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 50px;
+  }
+
   .header{
     display: flex;
     justify-content:space-around;
@@ -307,7 +313,8 @@ input {
 
   .startingPage,
   .prices,
-  .mobileOnly {
+  .mobileOnly,
+  .notTablet {
     display: none;
   }
 }
@@ -339,6 +346,11 @@ input {
 
     p {
       font-size: 20px;
+    }
+
+    .header {
+      display: block;
+      text-align: center;
     }
 
     .about-us-text,
@@ -400,7 +412,8 @@ input {
     }
 
     .desktopOnly,
-    .prices {
+    .prices,
+    .notTablet {
       display: block;
     }
 

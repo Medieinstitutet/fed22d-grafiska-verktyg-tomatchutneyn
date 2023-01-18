@@ -23,7 +23,9 @@ const tabletSlider = document.getElementsByClassName('tabletSlider');
 const tabletOnly = document.querySelector('.tabletOnly');
 const introText = document.querySelector('.introText');
 const tabletRegister = document.createElement('div');
-const pageContent = document.querySelector('.pageContent')
+const pageContent = document.querySelector('.pageContent');
+const aboutUsTitle = document.createElement('div');
+const header = document.querySelector('header');
 
 startingPage.innerHTML += `<section class="information-text">
 <div id="info-container">  
@@ -44,11 +46,14 @@ introText.innerHTML += `<section class="information-text">
 </section>`;
 
 aboutUs.innerHTML = `<section class="about-us-text">
-  <h3>Om oss</h3>
+<h2 class="notTablet">Om oss</h2>
     <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br class="mobileOnly">
       Varje år får deltagarna chansen att tävla om ett fint pris.</p>
     <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;
+
+aboutUsTitle.innerHTML = '<h2 class="showInTablet">Om oss</h2>'
+aboutUsTitle.classList.add('aboutUsTitle')
 
 tabletRegister.classList.add('tabletRegister');
 tabletOnly.append(tabletRegister);
@@ -181,6 +186,8 @@ function showSlidesTablet(n) {
 startingPageLink.addEventListener('click', () => {
   prices.remove();
   aboutUs.remove();
+  aboutUsTitle.remove();
+  header.classList.remove('mobileTablet');
   pageContent.append(startingPage);
   welcomeHeader.className = '';
   welcomeHeader.classList.add('welcomeStart');
@@ -190,6 +197,8 @@ startingPageLink.addEventListener('click', () => {
 pricesLink.addEventListener('click', () => {
   startingPage.remove();
   aboutUs.remove();
+  aboutUsTitle.remove();
+  header.classList.add('mobileTablet');
   pageContent.append(prices);
   welcomeHeader.className = '';
   welcomeHeader.classList.add('welcomePrice');
@@ -200,6 +209,8 @@ aboutUsLink.addEventListener('click', () => {
   startingPage.remove();
   tabletOnly.remove();
   prices.remove();
+  header.classList.add('mobileTablet');
+  pageContent.append(aboutUsTitle);
   pageContent.append(aboutUs);
   welcomeHeader.className = '';
   welcomeHeader.classList.add('welcomeAbout');
@@ -207,3 +218,4 @@ aboutUsLink.addEventListener('click', () => {
 
 aboutUs.remove();
 prices.remove();
+header.classList.remove('mobileTablet');

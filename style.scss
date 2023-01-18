@@ -50,7 +50,7 @@ body {
     padding: 8px 25px;
     color: white;
     border: none;
-    font-family: 'Julee', cursive;
+
     font-size: 1rem;
     cursor: pointer;
   }
@@ -86,7 +86,6 @@ body {
 header {
   justify-content: center;
   padding: 20px;
-  font-family: 'Julee', cursive;
   background-color: var(--darkblue);
   border-bottom: 1px solid var(--yellow);
 }
@@ -112,7 +111,6 @@ input {
   text-align: center;
   padding: 6px 0;
   border-radius: 10px;
-  font-family: 'Julee', cursive;
   font-size: 20px;
 }
 
@@ -250,7 +248,6 @@ input {
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 450px;
-    font-family: var(--fontFamilyJulee);
   }
 
   .aboutUsTitle {
@@ -293,7 +290,6 @@ input {
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
     max-width: 400px;
-    font-family: var(--fontFamilyJulee);
     padding-top: 30px;
     padding-bottom: 50px;
   }
@@ -360,17 +356,22 @@ input {
       text-align: center;
     }
 
+    .about-us-text {
+      h2 {
+        text-align: center;
+      }
+    }
+
     .about-us-text,
     .information-text {
+      display: flex;
+      flex-direction: column;
       padding: 30px;
       margin: auto;
       border-radius: 10px;
-      box-shadow: inset 0px 0px 6px 1px #f7cb22;
       max-width: 495px;
+      box-shadow: inset 0px 0px 6px 1px #f7cb22;
       background-color: var(--darkblue);
-      font-family: var(--fontFamilyJulee);
-      display: flex;
-      flex-direction: column;
 
       p {
         line-height: 35px;

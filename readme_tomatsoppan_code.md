@@ -26,7 +26,7 @@ Den stora skillnaden gentemot desktop är att den animerade pumpan ska flyttas u
 
 Mobile
 
-//Bild på mobile Startsida//
+//Bild på mobil Startsida//
 
 På mobil ska animerade pumpan helt plockas bort. Vidare ska ramarna runt textrutorna och slidern också tas bort.
 

@@ -19,7 +19,7 @@ I första hand kollar vi möjligheten att boka om mötet. Annars genomförs möt
 
 
 Vilken linting- och prettier-konfiguration ni kör:
-
+Vi har använt standard Prettier konfigurationen.
 
 Hur ni skriver commit-meddelanden:
 
@@ -38,7 +38,7 @@ Issues skapas först med syfte att täcka allt vi kan tänkas behöva göra. Dä
 
 Hur, när och vem gör code reviews:
 
-Den som commitar lägger de andra två som reviewers. Syftet är dels att alla ska reviewa så mycket som möjligt men också säkerställa att inget missas. 
+Den som commitar lägger de andra två som reviewers. Syftet är dels att alla ska reviewa så mycket som möjligt men också säkerställa att inget missas. Om någon av gruppmedlemmarna har förhinder så är gruppen överens om att review endast behöver göras av den tillgänlige gruppmedlemmen. 
 
 
 Hur ser er tidsplan ut, vad har ni för milstolpar och hur ni hanterar om ni märker att ni hamnar efter/före i planeringen?:

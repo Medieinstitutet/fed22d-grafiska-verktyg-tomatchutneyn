@@ -30,7 +30,7 @@ startingPage.innerHTML += `<section class="information-text">
 <h2 class="desktopOnly">Information</h2>
     <img src="./assets/Pumpkin-Clipart-Transparent-PNG.png" class="desktopOnly" id ="pumpkin-desktop" alt="Spinning Pumpkin">
 </div>    
-    <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm.
+    <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. <br class="desktopOnly">
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>
         <br>O s a senast 22 oktober via anmälan nedan.
     </p>
@@ -44,8 +44,8 @@ introText.innerHTML += `<section class="information-text">
 </section>`;
 
 aboutUs.innerHTML = `<section class="about-us-text">
-  <h2>Om oss</h2>
-    <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br/>
+  <h3>Om oss</h3>
+    <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br class="mobileTablet">
       Varje år får deltagarna chansen att tävla om ett fint pris.</p>
     <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;
@@ -74,7 +74,7 @@ cookieBar.innerHTML = '<div>Acceptera cookies</div>';
 cookieBtn.innerHTML = 'Godkänn';
 cookieBar.appendChild(cookieBtn);
 
-closePopup.innerHTML = '<h4>Stäng</h4>';
+closePopup.innerHTML = '<p>Stäng</p>';
 closePopup.classList.add('closePopup');
 popup.append(closePopup);
 

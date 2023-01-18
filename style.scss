@@ -24,14 +24,13 @@ body {
 
   h1,
   h2,
-  h3,
-  h4 {
+  h3 {
     font-weight: normal;
     margin: 0;
     letter-spacing: 1px;
   }
 
-  h2 {
+  h1 {
     text-align: center;
     font-size: 2.5rem;
   }
@@ -81,7 +80,7 @@ body {
 .prices,
 .aboutUs {
   position: relative;
-  padding-bottom: 100px;
+  padding-bottom: 90px;
 }
 
 header {
@@ -95,7 +94,7 @@ header {
 .menu {
   display: flex;
   justify-content: space-evenly;
-  //font-size: i design 32px men är en h4?;
+  //font-size: i design 32px men är en h2?;
   background-color: var(--darkblue);
   padding: 20px 0;
   border-bottom: 1px solid var(--yellow);
@@ -103,7 +102,7 @@ header {
 
 //startpage content
 .startingPage {
-  h4 {
+  h2 {
     margin: 20px;
   }
 }
@@ -125,10 +124,12 @@ input {
 
 .overlayColor {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
-  height: 100vh;
-  width: 100vw;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
   background-color: var(--overlayColor);
 }
 
@@ -175,6 +176,7 @@ input {
 }
 
 .caption {
+  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -200,6 +202,10 @@ input {
 
 .next {
   right: 0;
+}
+
+.aboutUs h3 {
+  text-align: center;
 }
 
 //let me be your footer
@@ -307,21 +313,50 @@ input {
       display: none;
     }
 
+    h1 {
+      font-size: 96px;
+    }
+
+    h2 {
+      font-size: 48px;
+    }
+    
+    h3 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
     .about-us-text,
     .information-text {
       padding: 30px;
       margin: auto;
       border-radius: 10px;
       box-shadow: inset 0px 0px 6px 1px #f7cb22;
-      max-width: 335px;
+      max-width: 495px;
       background-color: var(--darkblue);
       font-family: var(--fontFamilyJulee);
       display: flex;
       flex-direction: column;
+
+      p {
+        line-height: 35px;
+      }
+
+      h2 {
+        margin-bottom: 0px;
+      }
+    }
+
+    input {
+      width: 300px;
     }
 
     #info-container {
       display: flex;
+      align-items: center;
     }
 
     #pumpkin-desktop {
@@ -364,13 +399,17 @@ input {
 
     .container {
       margin: auto;
-      padding-bottom: 100px;
+      padding-bottom: 40px;
       border-radius: 10px;
       margin-top: 60px;
       max-width: 600px;
       padding-top: 30px;
       box-shadow: inset 0px 0px 6px 1px #f7cb22;
       background-color: var(--darkblue);
+
+      h3 {
+        text-align: center;
+      }
     }
 
     .image {

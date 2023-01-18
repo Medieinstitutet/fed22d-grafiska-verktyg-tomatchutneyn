@@ -30,7 +30,7 @@ const header = document.querySelector('header');
 startingPage.innerHTML += `<section class="information-text">
 <div id="info-container">  
 <h2 class="desktopOnly">Information</h2>
-    <img src="./assets/Pumpkin-Clipart-Transparent-PNG.png" class="desktopOnly" id ="pumpkin-desktop" alt="Spinning Pumpkin">
+    <img src="./assets/Pumpkin-Clipart-Transparent-SVG.svg" class="desktopOnly" id ="pumpkin-desktop" alt="Spinning Pumpkin">
 </div>    
     <p>Lördagen den 30 oktober blir det maskerad i Ljushallen, Stora gatan 29, Stockholm. <br class="desktopOnly">
         Räkna med en skrämmande upplevelse. Personen med läskigast utklädnad vinner pris!<br>

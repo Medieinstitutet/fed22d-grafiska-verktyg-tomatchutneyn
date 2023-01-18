@@ -37,4 +37,4 @@ Vi började med att gå igenom allt som behöver göras och bröt ner det till I
 
 //Bild på Issues//
 
-Sedan fortsatte jobba på det sättet, när man är klar med en issue så hoppar man på nästa.
+När man var klar med sina issues så assignade man nya åt sig själv. Om det var något man kände sig osäker på eller behövde hjälp så kommunicerade man ut det i Teams och fick oftast hjälp direkt.

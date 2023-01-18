@@ -45,7 +45,7 @@ introText.innerHTML += `<section class="information-text">
 
 aboutUs.innerHTML = `<section class="about-us-text">
   <h3>Om oss</h3>
-    <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br class="mobileTablet">
+    <p>Sedan år 1978 har vi anordnat Stockholms bästa halloweenfester.<br class="mobileOnly">
       Varje år får deltagarna chansen att tävla om ett fint pris.</p>
     <p>Frågor? Kontakta oss på<br/> halloween@gmail.com</p>
 </section>`;

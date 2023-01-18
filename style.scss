@@ -178,6 +178,7 @@ input {
 .caption {
   text-align: center;
   margin-bottom: 20px;
+  font-size: 2rem;
 }
 
 .image {
@@ -206,6 +207,7 @@ input {
 
 .aboutUs h3 {
   text-align: center;
+  font-size: 2rem;
 }
 
 //let me be your footer
@@ -230,12 +232,16 @@ input {
 }
 
 @media (min-width: 700px) {
+  header h1 {
+    font-size: 6rem;
+  }
+
   .about-us-text {
     padding: 30px;
     margin: auto;
     border-radius: 10px;
     box-shadow: inset 0px 0px 6px 1px #f7cb22;
-    max-width: 335px;
+    max-width: 450px;
     font-family: var(--fontFamilyJulee);
   }
 
@@ -297,7 +303,8 @@ input {
   }
 
   .startingPage,
-  .prices {
+  .prices,
+  .mobileOnly {
     display: none;
   }
 }
@@ -311,10 +318,6 @@ input {
     .welcomeAbout,
     .showInTablet {
       display: none;
-    }
-
-    h1 {
-      font-size: 96px;
     }
 
     h2 {

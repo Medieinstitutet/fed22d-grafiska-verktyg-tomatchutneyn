@@ -35,7 +35,7 @@ Den som commitar lägger de andra två som reviewers. Syftet är dels att alla s
 
 ### Hur ser er tidsplan ut, vad har ni för milstolpar och hur ni hanterar om ni märker att ni hamnar efter/före i planeringen?:
 
-Få klart så mycket som möjligt v.1, finslip och övrig runtomkring arbete v.2. Ligger man efter ska man kommunicera detta till gruppen så alla kan hjälpas åt att lösa problemet. Känns det som att vi ligger före ska vi i första hand säkerställa att det faktiskt är så, dvs att vi inte missat något eller underskattat svårigheten/tidsåtgång av kvarvarande uppgifter. 
+Få klart så mycket som möjligt v.1, finslip och övrig runtomkring arbete v.2. Ligger man efter ska man kommunicera detta till gruppen så alla kan hjälpas åt att lösa problemet. Känns det som att vi ligger före ska vi i första hand säkerställa att det faktiskt är så, dvs att vi inte missat något eller underskattat svårigheten/tidsåtgången av kvarvarande uppgifter. 
 
 ## Signaturer:
 

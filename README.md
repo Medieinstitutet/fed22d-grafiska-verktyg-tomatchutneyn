@@ -17,7 +17,7 @@ Startsidan består av en informationsruta samt input fält för e-post och en an
 Fina priser sidan består av en slider där användaren kan bläddra mellan två olika biler med hjälp av pilar på vardera sida.
 
 ## Om oss
-![desktop-om-oss](https://user-images.githubusercontent.com/61707427/213185988-a60c8466-3cb2-49a7-a67c-5dd15ef044dd.png)
+![Skärmavbild 2023-01-18 kl  22 21 37](https://user-images.githubusercontent.com/61707427/213297693-f9899435-eec3-410d-b346-7d719a053528.png)
 
 Om oss sidan består av en Om oss ruta med information om festen.
 

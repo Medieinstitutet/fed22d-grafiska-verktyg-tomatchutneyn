@@ -34,7 +34,7 @@ På mobil ska animerade pumpan helt plockas bort. Vidare ska ramarna runt textru
 
 # Arbetsprocess:
 
-Vi började med att gå igenom allt som behöver göras och bröt ner det till Issues. Totalt blev det 41 issues, med namngivningsstrukter enligt Desktop: Startsida -> Skapa knapp osv. Samtliga issues fick även ett flertal ”Labels” (desktop, tablet, Om oss, Startsida osv). På så vis kunde vi lättare sortera och gå igenom allt som ska göras. Därefter fick man assigna sig själv allt som man direkt kände att man ville göra/bli bättre på. 
+Vi började med att gå igenom allt som behövde göras och bröt ner det till Issues. Totalt blev det 41 issues, med namngivningsstrukter enligt Desktop: Startsida -> Skapa knapp osv. Samtliga issues fick även ett flertal ”Labels” (desktop, tablet, Om oss, Startsida osv). På så vis kunde vi lättare sortera och gå igenom allt som ska göras. Därefter fick man assigna sig själv allt som man direkt kände att man ville göra/bli bättre på. 
 
 ![issues](https://user-images.githubusercontent.com/61707427/213186370-20ce69f5-b64a-4578-ba78-8a760fefc84b.png)
 

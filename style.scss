@@ -237,6 +237,10 @@ input {
     margin: 0;
   }
 
+  .menu {
+    font-size: 2rem;
+  }
+
   .about-us-text {
     padding: 30px;
     margin: auto;
@@ -252,9 +256,9 @@ input {
     padding-top: 50px;
   }
 
-  .header{
+  .header {
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
   }
 
   #pumpkin-tablet {
@@ -339,7 +343,7 @@ input {
     h2 {
       font-size: 48px;
     }
-    
+
     h3 {
       font-size: 32px;
     }

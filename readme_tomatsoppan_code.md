@@ -43,7 +43,7 @@ När man var klar med sina issues så assignade man nya åt sig själv. Om det v
 # Lighthouse resultat
 
 ## Desktop
-![lighthouse-desktop](https://user-images.githubusercontent.com/61707427/213295098-c61a7959-84b7-4d0a-af94-4403b944f75f.png)
+![lighthouse-desktop](https://user-images.githubusercontent.com/61707427/213296331-8eb5713d-e942-4c16-a669-e1147b63c969.png)
 
 ## Mobile
 ![lighthouse-mobile](https://user-images.githubusercontent.com/61707427/213295137-ca33ae56-cfe1-42cf-a358-50a2db3a16f2.png)

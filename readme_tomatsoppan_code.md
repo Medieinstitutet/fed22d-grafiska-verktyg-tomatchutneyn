@@ -7,7 +7,7 @@ Designen överlag domineras av en mörkblå färg för bakgrunden med gul text o
 # Desktop
 
 ## Startsida
-![desktop-startsida](https://user-images.githubusercontent.com/61707427/213185810-993f821e-b75c-4c0b-8b23-cb7673ec1a16.png)
+![desktop-startsida](https://user-images.githubusercontent.com/61707427/213190962-98bc549c-dc49-4ec1-8a31-d1c28bf55ddb.png)
 
 Startsidan består av en informationsruta samt input fält för e-post och en anmälan knapp. När man fyller i korrekt e-post så visas en pop-up med bekräftelse. Bakgrunden ska då tonas ut. Bredvid Information rubriken ska en pumpa visas och animeras en gång.
 
@@ -22,8 +22,7 @@ Fina priser sidan består av en slider där användaren kan bläddra mellan två
 Om oss sidan består av en Om oss ruta med information om festen.
 
 # Tablet
-
-![tablet-startsida](https://user-images.githubusercontent.com/61707427/213186072-f53d3b1a-ccd7-44cc-b6e6-aba5a8129289.png)
+![tablet-startsida](https://user-images.githubusercontent.com/61707427/213191686-1967eee3-cdb9-4707-b731-bc6da055180b.png)
 
 Den stora skillnaden gentemot desktop är att den animerade pumpan ska flyttas upp till Rubriken och att Startsida och Fina priser ska kombineras till en. Dvs man ska mötas av Informationsrutan och direkt under det Fina priser slidern. Och som sagt ovan ska rubriken vara synlig hela tiden oavsett sida man är på.
 

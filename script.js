@@ -88,11 +88,11 @@ popupText.innerHTML =
 popupText.classList.add('popupText');
 popup.append(popupText);
 
-cookieBtn.addEventListener('click', () => {
+cookieBtn.addEventListener('click', function closeCookieBar () {
   cookieBar.remove();
 });
 
-registerBtn.addEventListener('click', () => {
+registerBtn.addEventListener('click', function registerForEvent () {
   if (isEmail(inputField.value)) {
     overlayColor.classList.add('overlayColor');
     popup.classList.add('popup');
@@ -105,7 +105,7 @@ registerBtn.addEventListener('click', () => {
   }
 });
 
-registerBtnTablet.addEventListener('click', () => {
+registerBtnTablet.addEventListener('click', function registerForEventTablet () {
   if (isEmail(inputFieldTablet.value)) {
     overlayColor.classList.add('overlayColor');
     popup.classList.add('popup');
@@ -118,7 +118,7 @@ registerBtnTablet.addEventListener('click', () => {
   }
 });
 
-closePopup.addEventListener('click', () => {
+closePopup.addEventListener('click', function closePopupWindow () {
   overlayColor.remove();
   popup.remove();
 });
@@ -183,7 +183,7 @@ function showSlidesTablet(n) {
   tabletSlider[slideIndexTablet - 1].style.display = 'block';
 }
 
-startingPageLink.addEventListener('click', () => {
+startingPageLink.addEventListener('click', function loadStaringPage () {
   prices.remove();
   aboutUs.remove();
   aboutUsTitle.remove();
@@ -194,7 +194,7 @@ startingPageLink.addEventListener('click', () => {
   pageContent.append(tabletOnly);
 });
 
-pricesLink.addEventListener('click', () => {
+pricesLink.addEventListener('click', function loadPrices () {
   startingPage.remove();
   aboutUs.remove();
   aboutUsTitle.remove();
@@ -205,7 +205,7 @@ pricesLink.addEventListener('click', () => {
   pageContent.append(tabletOnly);
 });
 
-aboutUsLink.addEventListener('click', () => {
+aboutUsLink.addEventListener('click', function loadAboutUs () {
   startingPage.remove();
   tabletOnly.remove();
   prices.remove();

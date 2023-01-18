@@ -39,3 +39,13 @@ Vi började med att gå igenom allt som behövde göras och bröt ner det till I
 ![issues](https://user-images.githubusercontent.com/61707427/213186370-20ce69f5-b64a-4578-ba78-8a760fefc84b.png)
 
 När man var klar med sina issues så assignade man nya åt sig själv. Om det var något man kände sig osäker på eller behövde hjälp så kommunicerade man ut det i Teams och fick oftast hjälp direkt.
+
+# Lighthouse resultat
+
+## Desktop
+![lighthouse-desktop](https://user-images.githubusercontent.com/61707427/213295098-c61a7959-84b7-4d0a-af94-4403b944f75f.png)
+
+## Mobile
+![lighthouse-mobile](https://user-images.githubusercontent.com/61707427/213295137-ca33ae56-cfe1-42cf-a358-50a2db3a16f2.png)
+
+Optimeringsprocessen har pågått under hela projektet. Det som hindrar Tillgänlighet från att nå 100 är at bakgrunden och förgrunden har för lite kontrast. Detta är dessvärre något vi inte kan ändra utan att påverka designen i alltför stor grad.

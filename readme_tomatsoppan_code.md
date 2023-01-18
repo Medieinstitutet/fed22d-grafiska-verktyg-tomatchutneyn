@@ -6,7 +6,7 @@ Designen överlag domineras av en mörkblå färg för bakgrunden med gul text o
 
 Desktop
 
-//Bild på desktop Startsida
+//Bild på desktop Startsida//
 
 Startsidan består av en informationsruta samt input fält för e-post och en anmälan knapp. När man fyller i korrekt e-post så visas en pop-up med bekräftelse. Bakgrunden ska då tonas ut. Bredvid Information rubriken ska en pumpa visas och animeras en gång.
 
@@ -14,24 +14,26 @@ Startsidan består av en informationsruta samt input fält för e-post och en an
 
 Fina priser sidan består av en slider där användaren kan bläddra mellan två olika biler med hjälp av pilar på vardera sida.
 
-//Bild på desktop Om oss
+//Bild på desktop Om oss//
 
 Om oss sidan består av en Om oss ruta med information om festen.
 
 Tablet
 
-//Bild på tablet Startsida
+//Bild på tablet Startsida//
 
 Den stora skillnaden gentemot desktop är att den animerade pumpan ska flyttas upp till Rubriken och att Startsida och Fina priser ska kombineras till en. Dvs man ska mötas av Informationsrutan och direkt under det Fina priser slidern. Och som sagt ovan ska rubriken vara synlig hela tiden oavsett sida man är på.
 
 Mobile
 
-//Bild på mobile Startsida
+//Bild på mobile Startsida//
 
 På mobil ska animerade pumpan helt plockas bort. Vidare ska ramarna runt textrutorna och slidern också tas bort.
 
 Arbetsprocess:
 
 Vi började med att gå igenom allt som behöver göras och bröt ner det till Issues. Totalt blev det 41 issues, med namngivningsstrukter enligt Desktop: Startsida -> Skapa knapp osv. Samtliga issues fick även ett flertal ”Labels” (desktop, tablet, Om oss, Startsida osv). På så vis kunde vi lättare sortera och gå igenom allt som ska göras. Därefter fick man assigna sig själv allt som man direkt kände att man ville göra/bli bättre på. 
+
+//Bild på Issues//
 
 Sedan fortsatte jobba på det sättet, när man är klar med en issue så hoppar man på nästa.

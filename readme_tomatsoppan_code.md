@@ -2,6 +2,7 @@ Om designen:
 
 Vi fick designen från gruppen Tomatchutneyn. De valde ett Halloween tema med en sida som bjuder in användaren till en kommande Halloween fest. Det första som slog oss var att Tomatchutney valde att skapa en 3-sidig design istället för en one-pager som vi hade förväntat oss. Inte för att det är något obekant för oss men vi insåg att det sannolikt kommer ta lite längre tid att genomföra. 
 
+Designen överlag domineras av en mörkblå färg för bakgrunden med gul text och orangea knappar. Nedanför rubriken finns tre länkar som leder till olika sidor. Rubriken ska, endast på desktop, försvinna i länkarna ”Fina priser” och ”Om oss”. På Tablet och Mobile ska rubriken vara synlig på samtliga sidor. 
 
 
 Desktop

@@ -248,18 +248,17 @@ input {
 
   .header{
     display: flex;
-    //margin-left: auto;
-    //margin-right: auto;
-    justify-content: center;
-    gap: 0px
+    justify-content:space-around;
   }
 
   #pumpkin-tablet {
-    width: 100px;
+    width: 80px;
     max-height: 100%;
     //margin-right: 30px;
     animation: rotation 2s ease-in-out;
-    margin-top: 120px;
+    position: relative;
+    top: 130px;
+    right: 5px;
   }
 
   @keyframes rotation {
@@ -310,6 +309,12 @@ input {
   .prices,
   .mobileOnly {
     display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  #pumpkin-tablet {
+    right: 50px;
   }
 }
 

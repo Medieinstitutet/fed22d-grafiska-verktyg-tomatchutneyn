@@ -132,12 +132,9 @@ input {
 }
 
 .popup {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 28vh;
+  position: relative;
+  margin: 0 auto;
+  top: 25vh;
   z-index: 2;
   max-width: 335px;
   height: 300px;
@@ -310,7 +307,6 @@ input {
   }
 
   .popup {
-  margin-top: 35vh;
   max-width: 610px;
   height: 480px;
   }
@@ -430,8 +426,6 @@ input {
     }
 
     .popup {
-      position: fixed;
-      top: -10%;
       max-width: 466;
       height: 500px;
       }

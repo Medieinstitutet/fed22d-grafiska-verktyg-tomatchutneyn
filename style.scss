@@ -313,12 +313,12 @@ input {
   }
 
   .popup {
-  max-width: 610px;
-  height: 480px;
+    max-width: 610px;
+    height: 480px;
   }
 
   .popupText {
-  top: 185px;
+    top: 185px;
   }
 
   .tabletOnly,
@@ -343,7 +343,7 @@ input {
 @media (min-width: 900px) {
   body {
     background-image: url('assets/background-nedskalad.jpg');
-    background-repeat: no-repeat;
+    background-size: cover;
 
     .welcomePrice,
     .welcomeAbout,
@@ -434,8 +434,8 @@ input {
     .popup {
       max-width: 600px;
       height: 500px;
-      }
-    
+    }
+
     .popupText {
       top: 185px;
     }

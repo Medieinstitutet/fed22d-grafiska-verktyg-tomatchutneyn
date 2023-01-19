@@ -93,13 +93,11 @@ header {
 .menu {
   display: flex;
   justify-content: space-evenly;
-  //font-size: i design 32px men är en h2?;
   background-color: var(--darkblue);
   padding: 20px 0;
   border-bottom: 1px solid var(--yellow);
 }
 
-//startpage content
 .startingPage {
   h2 {
     margin: 20px;
@@ -111,7 +109,7 @@ input {
   text-align: center;
   padding: 6px 0;
   border-radius: 10px;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .errorElement {
@@ -210,7 +208,6 @@ input {
   margin-top: 30px;
 }
 
-//let me be your footer
 .cookieBar {
   position: absolute;
   display: flex;
@@ -223,7 +220,6 @@ input {
   box-shadow: inset 0 7px 9px -7px #f7cb22;
 }
 
-//let us be last
 .hidden,
 .tabletOnly,
 .showInTablet,
@@ -263,7 +259,6 @@ input {
   #pumpkin-tablet {
     width: 80px;
     max-height: 100%;
-    //margin-right: 30px;
     animation: rotation 2s ease-in-out;
     position: relative;
     top: 130px;
@@ -352,15 +347,15 @@ input {
     }
 
     h2 {
-      font-size: 48px;
+      font-size: 3rem;
     }
 
     h3 {
-      font-size: 32px;
+      font-size: 2rem;
     }
 
     p {
-      font-size: 20px;
+      font-size: 1.25rem;
     }
 
     .header {

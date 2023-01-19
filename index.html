@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="se">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Tomatsoppan" content="Halloween party invitation">
+    <meta
+      name="description"
+      content="Halloween party invitation site created by Front-End students at Medieinstitutet"
+    >
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Frontend, Web Development, Halloween, Party"
+    >
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Girassol&family=Julee&display=swap"
+      rel="stylesheet"
+    >
+
+    <script
+      src="https://kit.fontawesome.com/f27d901c01.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Halloweenfest</title>
+  </head>
+  <body>
+    <div class="pageContent">
+      <header class="header mobileTablet">
+        <div id="headerContainer">
+          <h1 id="welcomeHeader">Välkommen på Halloweenfest!</h1>
+        </div>
+        <div>
+          <img
+            src="./assets/Pumpkin-Clipart-Transparent-SVG.svg"
+            class="image showInTablet"
+            id="pumpkin-tablet"
+            alt="Spinning Pumpkin"
+          >
+        </div>
+      </header>
+
+      <div class="menu">
+        <a href="#" class="startingPageLink">Startsida</a>
+        <a href="#" class="pricesLink">Fina priser</a>
+        <a href="#" class="aboutUsLink">Om oss</a>
+      </div>
+
+      <div class="startingPage"></div>
+      <div class="tabletOnly">
+        <div class="introText"></div>
+        <div class="tabletGallery">
+          <div class="tabletSlider">
+            <div class="caption"><h3>Förra årets vinnare!</h3></div>
+            <img
+              src="assets/skelettgubbe-nedskalat.jpg"
+              alt="Winning costume"
+              class="image"
+            >
+          </div>
+
+          <div class="tabletSlider">
+            <div class="caption"><h3>Fina priser!</h3></div>
+            <img
+              src="assets/trophy-png-23.png"
+              alt="Trophy"
+              class="image mobileTablet"
+            >
+          </div>
+
+          <a class="prev" onclick="nextImageTablet(-1)"
+            ><i class="fa-solid fa-arrow-left fa-2x"></i
+          ></a>
+          <a class="next" onclick="nextImageTablet(1)"
+            ><i class="fa-solid fa-arrow-right fa-2x"></i
+          ></a>
+        </div>
+      </div>
+      <div class="prices">
+        <div class="container">
+          <div class="gallery">
+            <div class="caption"><h3>Förra årets vinnare!</h3></div>
+            <img
+              src="assets/skelettgubbe-nedskalat.jpg"
+              alt="Winning costume"
+              class="image"
+            >
+          </div>
+
+          <div class="gallery">
+            <div class="caption"><h3>Fina priser!</h3></div>
+            <img
+              src="assets/trophy-png-23.png"
+              alt="Trophy"
+              class="image mobileTablet"
+            >
+            <img
+              src="assets/trophy-pumpkin-png.png"
+              alt="Trophy"
+              class="image desktopOnly"
+            >
+          </div>
+
+          <a class="prev" onclick="nextImage(-1)"
+            ><i class="fa-solid fa-arrow-left fa-2x"></i
+          ></a>
+          <a class="next" onclick="nextImage(1)"
+            ><i class="fa-solid fa-arrow-right fa-2x"></i
+          ></a>
+        </div>
+      </div>
+      <div class="aboutUs"></div>
+      <div class="cookieBar"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

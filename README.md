@@ -49,3 +49,6 @@ När man var klar med sina issues så assignade man nya åt sig själv. Om det v
 ![lighthouse-mobile](https://user-images.githubusercontent.com/61707427/213295137-ca33ae56-cfe1-42cf-a358-50a2db3a16f2.png)
 
 Optimeringsprocessen har pågått under hela projektet. Det som hindrar Tillgänlighet från att nå 100 är att bakgrunden och förgrunden har för lite kontrast. Detta är dessvärre något vi inte kan ändra utan att påverka designen i alltför stor grad.
+
+# Tekniker vi använt
+För design använde vi Figma och Affinity Design. All kodning i VS Code. Vi valde att köra med vanilla JS, HTML och CSS, inga ramverk. Vi valde medvetet att generera så mycket av HTML som möjligt i JS i inlärningssyfte.
